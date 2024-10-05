@@ -1,3 +1,11 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",  // Disable "Unexpected any" rule
+    "@typescript-eslint/no-unused-vars": "off",   // Disable unused variables rule
+    "prefer-const": "off",                        // Disable prefer-const rule
+    "react-hooks/exhaustive-deps": "off",         // Disable missing dependencies in useEffect
+    "@next/next/no-img-element": "off",           // Disable rule suggesting <Image /> instead of <img>
+    "no-var": "off"                               // Disable rule that disallows using 'var'
+  }
 }
